@@ -1,12 +1,11 @@
-import android.service.autofill.FillEventHistory;
+package dagorik.mariachi.com.ohanahome.EjemplosJavaBasico;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.SplittableRandom;
 
-import dagorik.mariachi.com.ohanahome.Adapters.ViewHolders.ViewHolderGastos;
-import dagorik.mariachi.com.ohanahome.Carro;
+import dagorik.mariachi.com.ohanahome.EjemplosJavaBasico.Ejercicio.Autodromo;
+import dagorik.mariachi.com.ohanahome.EjemplosJavaBasico.Ejercicio.Bici;
+import dagorik.mariachi.com.ohanahome.EjemplosJavaBasico.Ejercicio.Ferrari;
 
 /**
  * Created by Dagorik on 29/08/17.
@@ -14,34 +13,93 @@ import dagorik.mariachi.com.ohanahome.Carro;
 
 public class ClaseJava {
 
-
     public static void main(String[] args) {
 
-        Carro ferrari = new Carro("AZUL",200,"8 CILINDORS");
+
+        Ferrari ferrari = new Ferrari();
+        Bici bici = new Bici();
+
         ferrari.acelera();
-        ferrari.frena();
-        ferrari.detallesCarro();
-        String color = ferrari.getColor();
-        System.out.println("EL COLOR ES : " + color);
-        int velocidaFerrari = ferrari.getVelocidad();
-        System.out.println("LA VELOCIDAD DEL FERRARI ES: " + velocidaFerrari);
+        bici.acelera();
+
+        Autodromo autodromo   = new Autodromo();
+        autodromo.carrera(ferrari);
 
 
-        System.out.println("-------------------------------------");
 
-        Carro carroPorDefecto = new Carro();
-        carroPorDefecto.acelera();
-        carroPorDefecto.frena();
-        carroPorDefecto.detallesCarro();
-        String colorCarro = carroPorDefecto.getColor();
-        System.out.println("EL COLOR ES : " + colorCarro);
-        int carroPorDefectoVelocidad = carroPorDefecto.getVelocidad();
-        System.out.println("LA VELOCIDAD DEL CARRO ES: " + carroPorDefectoVelocidad);
 
+
+
+
+
+
+
+
+
+       //Pelicula anabel = new Pelicula("$120 pesos","Terror");
+
+//        Documental gitHub = new Documental("$50 pesos","Geeks");
+//        Partidos crzVSAme = new Partidos("Cruz Azul","America");
+
+//        Cine cine = new Cine();
+        //cine.reproducirDocumental(gitHub);
+        //cine.reproducirPelicula(anabel);
+
+       // cine.resproducirLArgometraje(crzVSAme);
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        Perro perroSalchicha = new Perro("Salchicha", "4");
+//
+//        perroSalchicha.jadea();
+//        perroSalchicha.ladrar();
+//        perroSalchicha.mover();
+//        perroSalchicha.respira();
+//
+//        System.out.println("-------------------------");
+//
+//        Pajaro pajaroCarpintero = new Pajaro();
+//
+//        pajaroCarpintero.mover();
+//        pajaroCarpintero.respira();
+//        pajaroCarpintero.canta();
+//        pajaroCarpintero.vuela();
+
+
+//        Carro ferrari = new Carro("AZUL",200,"8 CILINDORS");
+//        ferrari.acelera();
+//        ferrari.frena();
+//        ferrari.detallesCarro();
+//        String color = ferrari.getColor();
+//        System.out.println("EL COLOR ES : " + color);
+//        int velocidaFerrari = ferrari.getVelocidad();
+//        System.out.println("LA VELOCIDAD DEL FERRARI ES: " + velocidaFerrari);
+//
+//
+//        System.out.println("-------------------------------------");
+//
+//        Carro carroPorDefecto = new Carro();
+//        carroPorDefecto.acelera();
+//        carroPorDefecto.frena();
+//        carroPorDefecto.detallesCarro();
+//        String colorCarro = carroPorDefecto.getColor();
+//        System.out.println("EL COLOR ES : " + colorCarro);
+//        int carroPorDefectoVelocidad = carroPorDefecto.getVelocidad();
+//        System.out.println("LA VELOCIDAD DEL CARRO ES: " + carroPorDefectoVelocidad);
+//
 
 
     }
-
 
 
     public static void suma(int x, int y) {

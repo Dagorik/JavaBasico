@@ -1,4 +1,4 @@
-package dagorik.mariachi.com.ohanahome;
+package dagorik.mariachi.com.ohanahome.EjemplosJavaBasico;
 
 /**
  * Created by Dagorik on 30/08/17.
